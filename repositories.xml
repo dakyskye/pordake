@@ -1,0 +1,11 @@
+<repositories encoding="unicode" version="1.1">
+	<repo priority="10" quality="experimental">
+		<name>pordake</name>
+		<description>dakyskye's personal portage overlay</description>
+		<owner>
+			<email>kanteladzelasha339@gmail.com</email>
+			<name>Lasha Kanteladze</name>
+		</owner>
+		<source type="git">https://github.com/dakyskye/pordake.git</source>
+	</repo>
+</repositories>
