@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Spotify Tray Icon
+GenericName=Music Player
+Icon=spotify-client
+Exec=spotify-tray
+Terminal=false
+X-MultipleArgs=false
+Categories=Audio;Music;Player;AudioVideo;
+StartupNotify=false
