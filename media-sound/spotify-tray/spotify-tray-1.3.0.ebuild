@@ -32,6 +32,7 @@ src_prepare(){
 
 src_install(){
 	insinto "/usr/bin/"
+	doins -r .
 	domenu "${FILESDIR}/${PN}.desktop"
 	doins "src/${PN}"
 	fperms +x "/usr/bin/${PN}"

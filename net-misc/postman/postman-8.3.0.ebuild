@@ -43,7 +43,7 @@ src_prepare() {
 src_install(){
 	pax-mark m Postman
 	insinto "/opt/${PN}"
-	doins -r *
+	doins -r .
 	dosym "/opt/${PN}/Postman" "/usr/bin/postman"
 	dosym "/opt/${PN}/Postman" "/usr/bin/Postman"
 	fperms +x "/opt/${PN}/Postman"
