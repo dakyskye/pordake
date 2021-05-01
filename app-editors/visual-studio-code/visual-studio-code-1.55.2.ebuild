@@ -7,8 +7,7 @@ inherit desktop eutils pax-utils xdg
 
 DESCRIPTION="Multiplatform Visual Studio Code from Microsoft"
 HOMEPAGE="https://code.visualstudio.com"
-BASE_URI="https://update.code.visualstudio.com/${PV}"
-SRC_URI="${BASE_URI}/linux-x64/stable -> ${P}-amd64.tar.gz"
+SRC_URI="https://update.code.visualstudio.com/linux-x64/stable -> ${P}-amd64.tar.gz"
 RESTRICT="bindist mirror strip"
 
 LICENSE="MIT"
@@ -44,13 +43,7 @@ QA_PREBUILT="
 	opt/${PN}/swiftshader/libGLESv2.so
 "
 
-pkg_setup(){
-	if use amd64; then
-		S="${WORKDIR}/VSCode-linux-x64"
-	else
-		die
-	fi
-}
+S="${WORKDIR}/VSCode-linux-x64"
 
 src_install(){
 	pax-mark m code
