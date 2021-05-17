@@ -14,7 +14,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="sys-fs/fuse:*"
+DEPEND="sys-fs/fuse:0"
 RDEPEND="${DEPEND}"
 
 QA_PRESTRIPPED="/opt/${PN}/${PN}"
