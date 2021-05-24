@@ -7,7 +7,7 @@ inherit desktop pax-utils xdg
 
 DESCRIPTION="Supercharge your API workflow"
 HOMEPAGE="https://www.getpostman.com/"
-SRC_URI="https://dl.pstmn.io/download/version/${PV}/linux64"
+SRC_URI="https://dl.pstmn.io/download/version/${PV}/linux64 -> ${PF}.tar.gz"
 RESTRICT="bindist strip mirror"
 
 LICENSE="MPL-2.0"
